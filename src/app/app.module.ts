@@ -32,7 +32,7 @@ const routes: Routes = [
     BrowserModule,
     MatButtonModule,
     MatTabsModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { useHash: true }),
     BrowserAnimationsModule
   ],
   providers: [],

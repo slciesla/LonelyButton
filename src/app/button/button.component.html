@@ -1,4 +1,9 @@
 <div>
-  <button class="the-button" [ngClass]="button.class" (click)="buttonClick()" mat-raised-button>{{button.face}}</button>
-  {{button.text}}
+  <div class="button-wrapper">
+    <button class="the-button" [ngClass]="button.class" (click)="buttonClick()"
+      mat-raised-button>{{button.face}}</button>
+  </div>
+  <div class="button-text">
+    {{button.text}}
+  </div>
 </div>

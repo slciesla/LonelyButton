@@ -4,6 +4,15 @@
   font-size: 3.5em;
 }
 
+.button-wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.button-text {
+  text-align: center;
+}
+
 .sleeping {
   background-color: lavender;
   color: darkorchid;
@@ -20,16 +29,16 @@
 }
 
 .excited {
-  background-color: goldenrod;
+  background-color: gold;
   color: black;
 }
 
-.angry {
+.mad {
   background-color: darkorange;
   color: firebrick;
 }
 
-.table-flip {
+.angry {
   background-color: orangered;
   color: darkred;
 }
