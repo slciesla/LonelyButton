@@ -20,9 +20,10 @@ export class GameService {
     localStorage.setItem('LonelyButtonGame', gameStr);
   }
 
-  private loadGame() {
-    const game: Game = this.decryptSave(localStorage.getItem('LonelyButtonGame'));
-    return game ? game : new Game();
+  private loadGame(): Game {
+    const game = this.decryptSave(localStorage.getItem('LonelyButtonGame'));
+    this.game = game ? game : new Game();
+    return this.game;
   }
 
   private decryptSave(gameStr: string): Game {

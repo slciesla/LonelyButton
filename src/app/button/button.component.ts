@@ -18,11 +18,13 @@ export class ButtonComponent implements OnInit {
   }
 
   buttonClick() {
-    this.gameService.Game.clicks++;
+    this.gameService.Game.stats.clicks++;
     if (this.button.mood === MOOD.SLEEPING) {
       this.button.angry();
-      this.gameService.Game.negClicks++;
-      this.gameService.Game.sleepClicks++;
+      this.gameService.Game.stats.negClicks++;
+      this.gameService.Game.stats.sleepClicks++;
+      this.gameService.Game.reputation--;
+      this.gameService.Game.currencySleep++;
     }
   }
 

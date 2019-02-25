@@ -9,6 +9,7 @@ import { ButtonComponent } from './button/button.component';
 import { OptionsComponent } from './options/options.component';
 import { StatsComponent } from './stats/stats.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CurrencyHeaderComponent } from './currency-header/currency-header.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
     ButtonComponent,
     StatsComponent,
     AchievementsComponent,
-    OptionsComponent
+    OptionsComponent,
+    CurrencyHeaderComponent
   ],
   imports: [
     BrowserAnimationsModule,
