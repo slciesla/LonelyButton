@@ -1,11 +1,23 @@
 <div>
-  <span *ngIf="gameService.Game.stats.happyClicks > 0">Happy: {{gameService.Game.currencyHappy}}</span>
-  <span *ngIf="gameService.Game.stats.excitedClicks > 0">Excited: {{gameService.Game.currencyExcited}}</span>
-  <span *ngIf="gameService.Game.stats.sleepClicks > 0">Sleep: {{gameService.Game.currencySleep}}</span>
-  <span *ngIf="gameService.Game.stats.sadClicks > 0">Sad: {{gameService.Game.currencySad}}</span>
-  <span *ngIf="gameService.Game.stats.madClicks > 0">Mad: {{gameService.Game.currencyMad}}</span>
-  <span *ngIf="gameService.Game.stats.angryClicks > 0">Angry: {{gameService.Game.currencyAngry}}</span>
-  <span *ngIf="gameService.Game.stats.posClicks + gameService.Game.stats.negClicks > 0">
+  <span *ngIf="gameService.Game.stats.happyClicks.get() > 0">
+    Happy: {{gameService.Game.currencyHappy}}
+  </span>
+  <span *ngIf="gameService.Game.stats.excitedClicks.get() > 0">
+    Excited: {{gameService.Game.currencyExcited}}
+  </span>
+  <span *ngIf="gameService.Game.stats.sleepClicks.get() > 0">
+    Sleep: {{gameService.Game.currencySleep}}
+  </span>
+  <span *ngIf="gameService.Game.stats.sadClicks.get() > 0">
+    Sad: {{gameService.Game.currencySad}}
+  </span>
+  <span *ngIf="gameService.Game.stats.madClicks.get() > 0">
+    Mad: {{gameService.Game.currencyMad}}
+  </span>
+  <span *ngIf="gameService.Game.stats.angryClicks.get() > 0">
+    Angry: {{gameService.Game.currencyAngry}}
+  </span>
+  <span *ngIf="gameService.Game.stats.posClicks.get() + gameService.Game.stats.negClicks.get() > 0">
     Reputation: {{gameService.Game.reputation}}
   </span>
 </div>
