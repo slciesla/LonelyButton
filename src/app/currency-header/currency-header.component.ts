@@ -4,7 +4,7 @@ import { GameService } from '../services/game.service';
 @Component({
   selector: 'app-currency-header',
   templateUrl: './currency-header.component.html',
-  styleUrls: ['./currency-header.component.css']
+  styleUrls: ['./currency-header.component.scss']
 })
 export class CurrencyHeaderComponent implements OnInit {
   gameService: GameService;
